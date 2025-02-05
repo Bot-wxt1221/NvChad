@@ -56,7 +56,7 @@ local delim = is_windows and ";" or ":"
 vim.env.PATH = table.concat({ vim.fn.stdpath "data", "mason", "bin" }, sep) .. delim .. vim.env.PATH
 require("nvchad.configs.dap.init").setup()
 require('competitest').setup{
- template_file ="/home/wxt/OI/Temp.cpp",
+ template_file ="/home/wxt/Working/OI/Temp.cpp",
  compile_command ={
     cpp={exec="g++",args={"$(FNAME)","-Wall","-std=c++14","-DONLINE_JUDGE","-fsanitize=undefined,address","-o",".cph/$(FNOEXT).cphbin"}}
   },
